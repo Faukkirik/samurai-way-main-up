@@ -1,0 +1,14 @@
+.nav {
+    grid-area: n;
+    background-color: brown;
+}
+.item{
+    color: rgba(17,15,17,0.93);
+}
+.active{
+    color: bisque;
+}
+.item:hover{
+    color: dimgray;
+    cursor: pointer;
+}

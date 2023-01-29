@@ -8,22 +8,10 @@
     /*grid-gap: 10px;*/
     width: 2000px;
     margin: 0 auto;
+
 }
 
-.header {
-    grid-area: h;
-    background-color: brown;
-}
-.header img{
-    width: 50px;
-background-color: brown;
-}
-.nav {
-    grid-area: n;
-    background-color: brown;
-}
 
-.content {
-    grid-area: c;
-    background-color: bisque;
-}
+
+
+
