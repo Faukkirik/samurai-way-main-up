@@ -1,14 +1,22 @@
 .nav {
     grid-area: n;
     background-color: brown;
+    padding: 20px;
 }
-.item{
-    color: rgba(17,15,17,0.93);
+
+.item {
+    color: darkgrey;
+    font-size: 35px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: "Arial Rounded MT Bold";
 }
-.active{
-    color: bisque;
-}
-.item:hover{
-    color: dimgray;
+
+.item:hover {
+    color:  dimgray;
     cursor: pointer;
+}
+
+.active {
+    color: black;
 }
