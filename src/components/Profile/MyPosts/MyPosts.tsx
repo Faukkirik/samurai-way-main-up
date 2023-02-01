@@ -3,6 +3,10 @@ import s from './MyPosts.module.css'
 import {Post} from "./Post/Post";
 
 export const MyPosts = () => {
+    let myPostData = [
+        {id: 1, message: "Hi, how are you?", likeCount:15},
+        {id: 2, message: "It's my first post", likeCount:20},
+    ]
     return (
         <div className={s.postBlock}>
             <h3>My post</h3>
@@ -17,12 +21,12 @@ export const MyPosts = () => {
             </div>
             <div className={s.posts}>
                 <Post
-                    message={"Hi, how are you?"}
-                    likeCount={15}
+                    message={myPostData[0].message}
+                    likeCount={myPostData[0].likeCount}
                 />
                 <Post
-                    message={"It's my first post"}
-                    likeCount={20}
+                    message={myPostData[1].message}
+                    likeCount={myPostData[1].likeCount}
                 />
 
             </div>
