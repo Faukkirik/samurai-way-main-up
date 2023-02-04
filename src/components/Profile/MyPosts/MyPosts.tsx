@@ -1,15 +1,16 @@
 import React from 'react';
 import s from './MyPosts.module.css'
-import {Post} from "./Post/Post";
+import {Post, TypePropsPost} from "./Post/Post";
 
-export const MyPosts = () => {
-    let posts = [
-        {id: 1, message: "Hi, how are you?", likeCount:15},
-        {id: 2, message: "It's my first post", likeCount:20},
-    ]
-    let postsElements = posts.map(el=>{
+export type MyPostsType = {
+    posts: TypePropsPost[]
+}
+export const MyPosts = (props: MyPostsType) => {
+
+    let postsElements = props.posts.map(el=>{
         return (
             <Post
+                key={el.id}
                 message={el.message}
                 likeCount={el.likeCount}
             />

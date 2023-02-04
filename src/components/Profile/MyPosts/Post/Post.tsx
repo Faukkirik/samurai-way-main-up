@@ -1,8 +1,9 @@
 import React from 'react';
 import s from './Post.module.css'
-import {message} from "antd";
 
-type TypePropsPost = {
+
+export type TypePropsPost = {
+    id?: number
     message: string
     likeCount: number
 }
